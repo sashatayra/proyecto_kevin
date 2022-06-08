@@ -1,0 +1,29 @@
+%header{
+    opacity: .7;
+}
+
+%titulos{
+    font-family: 'Koulen', cursive;
+    color: #000;
+    -webkit-text-stroke: 1px rgb(255, 255, 255);
+    color: black;
+    text-shadow: black 2px 5px;
+}
+
+%fotos{
+    margin: 20px;
+    border: 5px solid #eee;
+    box-shadow: 4px 4px 4px rgba(0,0,0,0.2);
+    transition: all 0.5s ease-out;
+    &:hover{
+        transform: rotate(-7deg);
+    }
+}
+
+%instaGeneral{
+    font-family: 'Lobster Two', cursive;
+        color: #000;
+        &:hover{
+            color: #680368;
+        }    
+}

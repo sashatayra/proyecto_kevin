@@ -1,0 +1,364 @@
+/*index*/
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	background-color: #000;
+	font-family: 'Nunito', sans-serif;
+}
+
+#distincion{
+    background-color: #fff;
+    #imagenLogo{
+        animation-duration: 1.2s;
+        animation-name: aparecer;
+        animation-iteration-count: 5s;
+        @keyframes aparecer{
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+    }
+    #fotos{
+        #containerFotos{
+            @include tamaño(medium){
+                width: 100%;
+                height: 100%;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }   
+        }
+        
+    }    
+    #contenido{
+        #items{
+            background: radial-gradient(#ccc, #000);
+            color: #fff;
+        }
+    }
+}
+
+#tituloUno{
+    @extend %titulos;
+}
+
+#tituloDos{
+    @extend %titulos;
+}
+
+#tituloTres{
+    @extend %titulos;
+}
+
+#tituloCuatro{
+    @extend %titulos;
+}
+
+#tituloCinco{
+    @extend %titulos;
+}
+
+#imagenCuatro{
+    @extend %header;
+}
+
+#imagenCinco{
+    @extend %header;
+}
+
+#imagenSeis{
+    @extend %header;
+}
+
+
+#imagenUno{
+    @extend %fotos;
+}
+
+#imagenDos{
+    @extend %fotos;
+}
+
+#imagenTres{
+    @extend %fotos;
+}
+
+#footer{
+    background-color: #000;
+	color: #fff;
+    #datos{
+        color: #fff;
+        @include tamaño(medium){
+            flex-direction: column;
+        }
+    }
+}
+
+#horarioLugar{
+    color: (#fff);
+}
+
+
+#reserva{
+    #reservaMixin{
+        @include link (#fff, #000);
+    }
+}
+
+#card{
+    #cardTrabajos{
+        @include link (#000, #fff);
+    }
+}
+
+
+/*formularios*/
+
+#distincionFormularios{
+    #formulario{
+        @include tamaño (small){
+            width: 100%; 
+        } 
+    }
+    #tituloCardForm{
+        color: #000;
+        font-family: 'Barlow Condensed', sans-serif;
+        &:hover{
+        color:#680368;
+        }
+    }
+    .tituloDosForm{
+        font-family: 'Barlow Condensed', sans-serif;
+    }
+    background-color: #fff;
+    color: #000;
+    #comunicarteFormularios{
+        min-height: 50vh;
+    }
+    #trabajosFormularios{
+        min-height: 50vh;
+        #instaFormularios{
+            @extend %instaGeneral;
+        }
+    }
+}
+
+/*sobremi*/
+#headerSob{
+    color: #fff;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+#headerDosSob{
+    color: #fff;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+#reservaSob{
+    background-color: #fff;
+    color: #000;
+    opacity: .7;
+    &:hover{
+        opacity: .5;
+    }
+}
+
+#distincionSob{
+    background-color: #fff;
+    color: #000;
+    #cardSob{
+        background-color: #000;
+        color: #fff;
+        font-family: 'Barlow Condensed', sans-serif;
+    }
+    #cardDosSob{
+        background-color: #000;
+        color: #fff;
+        font-family: 'Barlow Condensed', sans-serif;
+    }
+    #trabajosSobreMi{
+        min-height: 25vh;
+    }
+    #instaSob{
+        @extend %instaGeneral;
+    }
+}
+
+/*estudio*/
+#headerEst{
+    color: #fff;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+#headerDosEst{
+    color: #fff;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+#distincionEstudio{
+    background-color: #fff;
+    color: #000;
+    #textoEsDos{
+        min-height: 50vh;
+    }
+    #instaEstudio{
+        @extend %instaGeneral;
+    }
+}
+
+/*cuidados*/
+
+#headerCui{
+    color: #fff;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+#distincionCui{
+    background-color: #fff;
+    color: #000;
+    #infoCui{
+        @include tamaño (large){
+            display: flex;
+            flex-direction: column;
+        }
+        #tituloCui{
+            font-family: 'Barlow Condensed', sans-serif;
+            color: #000;
+            &:hover{
+                color: #680368;
+            }
+        }
+        #tituloDosCui{
+            font-family: 'Barlow Condensed', sans-serif;
+            color: #000;
+            &:hover{
+                color: #680368;
+            }
+        }
+        #tituloTresCui{
+            font-family: 'Barlow Condensed', sans-serif;
+            color: #000;
+            &:hover{
+                color: #680368;
+            }
+        }
+        #tituloCuatroCui{
+            font-family: 'Barlow Condensed', sans-serif;
+            color: #000;
+            &:hover{
+                color: #680368;
+            }
+        }
+    }
+    #instaCui{
+        @extend %instaGeneral;
+    }
+}
+
+
+#horarioLugarCuidados{
+    color: #fff;
+    @include tamaño (large){
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+/*trabajos*/
+
+#headerTrabajos{
+    color: #fff;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+#headerDosTrabajos{
+    color: #fff;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+#distincionTrabajos{
+    background-color: #fff;
+    color: #000;
+    #instaTrabajos{
+        @extend %instaGeneral;
+    }
+}
+
+/*tips*/
+
+#distincionTips{
+    background-color: #fff;
+    color: #000;
+    #contenidoTips{
+        @include tamaño (large){
+            width: 75%;
+        }
+        #tituloTips{
+            font-family: 'Barlow Condensed', sans-serif;
+            font-weight: 300;
+        }
+        #tituloTipsDos{
+            font-family: 'Barlow Condensed', sans-serif;
+            font-weight: 300;
+    
+        }    
+    }
+    #tituloTipsTres{
+        font-family: 'Barlow Condensed', sans-serif;
+    }
+    .card-title{
+        font-family: 'Barlow Condensed', sans-serif;
+    }
+}
+
+#instaTips{
+    @extend %instaGeneral;
+}
+
+/*areas*/
+
+#distincionAreas{
+    background-color: #fff;
+    color: #000;
+    #tituloAreas{
+        font-family: 'Barlow Condensed', sans-serif;
+    }
+    #tituloUnoAreas{
+        font-family: 'Barlow Condensed', sans-serif;
+    }
+    #tituloDosAreas{
+        font-family: 'Barlow Condensed', sans-serif;
+    }
+    #tituloTresAreas{
+        font-family: 'Barlow Condensed', sans-serif;
+    }
+    #tituloCuatroAreas{
+        font-family: 'Barlow Condensed', sans-serif;
+    }
+    #tituloCincoAreas{
+        font-family: 'Barlow Condensed', sans-serif;
+    }
+    #tituloSeisAreas{
+        font-family: 'Barlow Condensed', sans-serif;
+    }
+}
+
+/*tatuajes*/
+
+#distincionTatuajes{
+    background-color: #fff;
+    color: #000;
+}
+
+/*guia*/
+
+#distincionGuia{
+    background-color: #fff;
+    color: #000;
+}

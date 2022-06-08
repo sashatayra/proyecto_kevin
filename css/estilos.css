@@ -1,0 +1,413 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Koulen&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Prompt:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;300&display=swap");
+/*index*/
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #000;
+  font-family: 'Nunito', sans-serif;
+}
+
+#distincion {
+  background-color: #fff;
+}
+
+#distincion #imagenLogo {
+  -webkit-animation-duration: 1.2s;
+          animation-duration: 1.2s;
+  -webkit-animation-name: aparecer;
+          animation-name: aparecer;
+  -webkit-animation-iteration-count: 5s;
+          animation-iteration-count: 5s;
+}
+
+@-webkit-keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  #distincion #fotos #containerFotos {
+    width: 100%;
+    height: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+#distincion #contenido #items {
+  background: radial-gradient(#ccc, #000);
+  color: #fff;
+}
+
+#footer {
+  background-color: #000;
+  color: #fff;
+}
+
+#footer #datos {
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  #footer #datos {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+#horarioLugar {
+  color: #fff;
+}
+
+#reserva #reservaMixin {
+  color: #fff;
+  font-family: 'Prompt', sans-serif;
+  background-color: #000;
+}
+
+#reserva #reservaMixin:hover {
+  color: #680368;
+}
+
+#card #cardTrabajos {
+  color: #000;
+  font-family: 'Prompt', sans-serif;
+  background-color: #fff;
+}
+
+#card #cardTrabajos:hover {
+  color: #680368;
+}
+
+/*formularios*/
+#distincionFormularios {
+  background-color: #fff;
+  color: #000;
+}
+
+@media (max-width: 576px) {
+  #distincionFormularios #formulario {
+    width: 100%;
+  }
+}
+
+#distincionFormularios #tituloCardForm {
+  color: #000;
+  font-family: 'Barlow Condensed', sans-serif;
+}
+
+#distincionFormularios #tituloCardForm:hover {
+  color: #680368;
+}
+
+#distincionFormularios .tituloDosForm {
+  font-family: 'Barlow Condensed', sans-serif;
+}
+
+#distincionFormularios #comunicarteFormularios {
+  min-height: 50vh;
+}
+
+#distincionFormularios #trabajosFormularios {
+  min-height: 50vh;
+}
+
+/*sobremi*/
+#headerSob {
+  color: #fff;
+  font-family: 'Barlow Condensed', sans-serif;
+}
+
+#headerDosSob {
+  color: #fff;
+  font-family: 'Barlow Condensed', sans-serif;
+}
+
+#reservaSob {
+  background-color: #fff;
+  color: #000;
+  opacity: .7;
+}
+
+#reservaSob:hover {
+  opacity: .5;
+}
+
+#distincionSob {
+  background-color: #fff;
+  color: #000;
+}
+
+#distincionSob #cardSob {
+  background-color: #000;
+  color: #fff;
+  font-family: 'Barlow Condensed', sans-serif;
+}
+
+#distincionSob #cardDosSob {
+  background-color: #000;
+  color: #fff;
+  font-family: 'Barlow Condensed', sans-serif;
+}
+
+#distincionSob #trabajosSobreMi {
+  min-height: 25vh;
+}
+
+/*estudio*/
+#headerEst {
+  color: #fff;
+  font-family: 'Barlow Condensed', sans-serif;
+}
+
+#headerDosEst {
+  color: #fff;
+  font-family: 'Barlow Condensed', sans-serif;
+}
+
+#distincionEstudio {
+  background-color: #fff;
+  color: #000;
+}
+
+#distincionEstudio #textoEsDos {
+  min-height: 50vh;
+}
+
+/*cuidados*/
+#headerCui {
+  color: #fff;
+  font-family: 'Barlow Condensed', sans-serif;
+}
+
+#distincionCui {
+  background-color: #fff;
+  color: #000;
+}
+
+@media (max-width: 992px) {
+  #distincionCui #infoCui {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+#distincionCui #infoCui #tituloCui {
+  font-family: 'Barlow Condensed', sans-serif;
+  color: #000;
+}
+
+#distincionCui #infoCui #tituloCui:hover {
+  color: #680368;
+}
+
+#distincionCui #infoCui #tituloDosCui {
+  font-family: 'Barlow Condensed', sans-serif;
+  color: #000;
+}
+
+#distincionCui #infoCui #tituloDosCui:hover {
+  color: #680368;
+}
+
+#distincionCui #infoCui #tituloTresCui {
+  font-family: 'Barlow Condensed', sans-serif;
+  color: #000;
+}
+
+#distincionCui #infoCui #tituloTresCui:hover {
+  color: #680368;
+}
+
+#distincionCui #infoCui #tituloCuatroCui {
+  font-family: 'Barlow Condensed', sans-serif;
+  color: #000;
+}
+
+#distincionCui #infoCui #tituloCuatroCui:hover {
+  color: #680368;
+}
+
+#horarioLugarCuidados {
+  color: #fff;
+}
+
+@media (max-width: 992px) {
+  #horarioLugarCuidados {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+/*trabajos*/
+#headerTrabajos {
+  color: #fff;
+  font-family: 'Barlow Condensed', sans-serif;
+}
+
+#headerDosTrabajos {
+  color: #fff;
+  font-family: 'Barlow Condensed', sans-serif;
+}
+
+#distincionTrabajos {
+  background-color: #fff;
+  color: #000;
+}
+
+/*tips*/
+#distincionTips {
+  background-color: #fff;
+  color: #000;
+}
+
+@media (max-width: 992px) {
+  #distincionTips #contenidoTips {
+    width: 75%;
+  }
+}
+
+#distincionTips #contenidoTips #tituloTips {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 300;
+}
+
+#distincionTips #contenidoTips #tituloTipsDos {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 300;
+}
+
+#distincionTips #tituloTipsTres {
+  font-family: 'Barlow Condensed', sans-serif;
+}
+
+#distincionTips .card-title {
+  font-family: 'Barlow Condensed', sans-serif;
+}
+
+/*areas*/
+#distincionAreas {
+  background-color: #fff;
+  color: #000;
+}
+
+#distincionAreas #tituloAreas {
+  font-family: 'Barlow Condensed', sans-serif;
+}
+
+#distincionAreas #tituloUnoAreas {
+  font-family: 'Barlow Condensed', sans-serif;
+}
+
+#distincionAreas #tituloDosAreas {
+  font-family: 'Barlow Condensed', sans-serif;
+}
+
+#distincionAreas #tituloTresAreas {
+  font-family: 'Barlow Condensed', sans-serif;
+}
+
+#distincionAreas #tituloCuatroAreas {
+  font-family: 'Barlow Condensed', sans-serif;
+}
+
+#distincionAreas #tituloCincoAreas {
+  font-family: 'Barlow Condensed', sans-serif;
+}
+
+#distincionAreas #tituloSeisAreas {
+  font-family: 'Barlow Condensed', sans-serif;
+}
+
+/*tatuajes*/
+#distincionTatuajes {
+  background-color: #fff;
+  color: #000;
+}
+
+/*guia*/
+#distincionGuia {
+  background-color: #fff;
+  color: #000;
+}
+
+#imagenCuatro, #imagenCinco, #imagenSeis {
+  opacity: .7;
+}
+
+#tituloUno, #tituloDos, #tituloTres, #tituloCuatro, #tituloCinco {
+  font-family: 'Koulen', cursive;
+  color: #000;
+  -webkit-text-stroke: 1px white;
+  color: black;
+  text-shadow: black 2px 5px;
+}
+
+#imagenUno, #imagenDos, #imagenTres {
+  margin: 20px;
+  border: 5px solid #eee;
+  -webkit-box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+          box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+
+#imagenUno:hover, #imagenDos:hover, #imagenTres:hover {
+  -webkit-transform: rotate(-7deg);
+          transform: rotate(-7deg);
+}
+
+#distincionFormularios #trabajosFormularios #instaFormularios, #distincionSob #instaSob, #distincionEstudio #instaEstudio, #distincionCui #instaCui, #distincionTrabajos #instaTrabajos, #instaTips {
+  font-family: 'Lobster Two', cursive;
+  color: #000;
+}
+
+#distincionFormularios #trabajosFormularios #instaFormularios:hover, #distincionSob #instaSob:hover, #distincionEstudio #instaEstudio:hover, #distincionCui #instaCui:hover, #distincionTrabajos #instaTrabajos:hover, #instaTips:hover {
+  color: #680368;
+}
+/*# sourceMappingURL=estilos.css.map */

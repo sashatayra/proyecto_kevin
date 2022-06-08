@@ -1,0 +1,4 @@
+Cambie el título del sitio.
+En la línea 9, agregue la metaetiqueta "description".
+Utilice las etiquetas semánticas "seccion" con "h1", "article" con "h2" y "footer".
+Trabajé solamente en el index, el resto de las páginas siguen con el formato viejo, el cual voy a cambiar para la tercera entrega.

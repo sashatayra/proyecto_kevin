@@ -1,0 +1,15 @@
+@mixin link ($color, $background-color) {
+    color: $color;
+    font-family: 'Prompt', sans-serif;
+    background-color: $background-color;
+    &:hover{
+        color: #680368;
+    }
+    
+}
+
+@mixin tamaño ($breakpoint) {
+    @media (max-width: map-get($breakpoints, $breakpoint)){
+        @content;
+    }
+}
