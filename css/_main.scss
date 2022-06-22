@@ -11,6 +11,11 @@ body{
 	font-family: 'Nunito', sans-serif;
 }
 
+#headerIndex{
+    min-height: 40vh;
+    background-color: #000;
+}
+
 #distincion{
     background-color: #fff;
     #imagenLogo{
@@ -40,42 +45,21 @@ body{
     }    
     #contenido{
         #items{
-            background: radial-gradient(#ccc, #000);
-            color: #fff;
+            font-family: 'Barlow Condensed', sans-serif;
         }
+    }
+    #mixin{
+        font-family: 'Barlow Condensed', sans-serif;
     }
 }
 
-#tituloUno{
-    @extend %titulos;
+#articulo{
+    opacity: .7;
+    @include link (white, black);
 }
-
-#tituloDos{
-    @extend %titulos;
-}
-
-#tituloTres{
-    @extend %titulos;
-}
-
-#tituloCuatro{
-    @extend %titulos;
-}
-
-#tituloCinco{
-    @extend %titulos;
-}
-
-#imagenCuatro{
-    @extend %header;
-}
-
-#imagenCinco{
-    @extend %header;
-}
-
-#imagenSeis{
-    @extend %header;
+#reserva{
+    opacity: .7;
+    @include link (white, black);
 }
 
 
@@ -104,29 +88,30 @@ body{
 
 #horarioLugar{
     color: (#fff);
-}
-
-
-#reserva{
-    #reservaMixin{
-        @include link (#fff, #000);
-    }
+    #tabla{
+        border-spacing: 5rem;
+        @include tamaño (medium){
+            justify-content: center;
+            align-items: center;
+        }
+        .table{
+            color: #fff;
+        }
+    } 
 }
 
 #card{
-    #cardTrabajos{
+    #cardMixin{
         @include link (#000, #fff);
     }
 }
 
 
 /*formularios*/
-
 #distincionFormularios{
-    #formulario{
-        @include tamaño (small){
-            width: 100%; 
-        } 
+    #btnForm{
+        opacity: .7;
+        @include link (white, black);
     }
     #tituloCardForm{
         color: #000;
@@ -173,25 +158,29 @@ body{
 #distincionSob{
     background-color: #fff;
     color: #000;
-    #cardSob{
-        background-color: #000;
-        color: #fff;
-        font-family: 'Barlow Condensed', sans-serif;
+    #containerGridSob{
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "uno dos"
+        ". tres"
     }
-    #cardDosSob{
-        background-color: #000;
-        color: #fff;
-        font-family: 'Barlow Condensed', sans-serif;
+    #sobUno{
+        grid-area: uno;
     }
-    #trabajosSobreMi{
-        min-height: 25vh;
+    #sobDos{
+        grid-area: dos;
     }
-    #instaSob{
-        @extend %instaGeneral;
+    #sobTres{
+        grid-area: tres;
     }
 }
+  
 
-/*estudio*/
+
+
+/*estudio/portfolio*/
 #headerEst{
     color: #fff;
     font-family: 'Barlow Condensed', sans-serif;
@@ -204,12 +193,62 @@ body{
 #distincionEstudio{
     background-color: #fff;
     color: #000;
+    #imgPort{
+        transition: 0.5s;
+        object-fit: cover;
+        &:hover {
+            transform: scale(.9); 
+        }
+    }
+    #imgPort{
+        transition: 0.5s;
+        object-fit: cover;
+        &:hover {
+            transform: scale(.9); 
+        }
+    }
+    #imgPortDos{
+        transition: 0.5s;
+        object-fit: cover;
+        &:hover {
+            transform: scale(.9); 
+        }
+    }
+    #imgPortTres{
+        transition: 0.5s;
+        object-fit: cover;
+        &:hover {
+            transform: scale(.9); 
+        }
+    }
+    #imgPortCuatro{
+        transition: 0.5s;
+        object-fit: cover;
+        &:hover {
+            transform: scale(.9); 
+        }
+    }
+    #imgPortCinco{
+        transition: 0.5s;
+        object-fit: cover;
+        &:hover {
+            transform: scale(.9); 
+        }
+    }
+    #imgPortSeis{
+        transition: 0.5s;
+        object-fit: cover;
+        &:hover {
+            transform: scale(.9); 
+        }
+    }
     #textoEsDos{
         min-height: 50vh;
     }
     #instaEstudio{
         @extend %instaGeneral;
     }
+
 }
 
 /*cuidados*/

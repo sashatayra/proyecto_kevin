@@ -1,9 +1,9 @@
 @mixin link ($color, $background-color) {
     color: $color;
-    font-family: 'Prompt', sans-serif;
+    font-family: 'Barlow Condensed', sans-serif;
     background-color: $background-color;
     &:hover{
-        color: #680368;
+        opacity: 1;
     }
     
 }

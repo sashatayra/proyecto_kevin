@@ -16,6 +16,11 @@ body {
   font-family: 'Nunito', sans-serif;
 }
 
+#headerIndex {
+  min-height: 40vh;
+  background-color: #000;
+}
+
 #distincion {
   background-color: #fff;
 }
@@ -47,7 +52,7 @@ body {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   #distincion #fotos #containerFotos {
     width: 100%;
     height: 100%;
@@ -65,8 +70,33 @@ body {
 }
 
 #distincion #contenido #items {
-  background: radial-gradient(#ccc, #000);
-  color: #fff;
+  font-family: 'Barlow Condensed', sans-serif;
+}
+
+#distincion #mixin {
+  font-family: 'Barlow Condensed', sans-serif;
+}
+
+#articulo {
+  opacity: .7;
+  color: white;
+  font-family: 'Barlow Condensed', sans-serif;
+  background-color: black;
+}
+
+#articulo:hover {
+  opacity: 1;
+}
+
+#reserva {
+  opacity: .7;
+  color: white;
+  font-family: 'Barlow Condensed', sans-serif;
+  background-color: black;
+}
+
+#reserva:hover {
+  opacity: 1;
 }
 
 #footer {
@@ -78,7 +108,7 @@ body {
   color: #fff;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   #footer #datos {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -91,24 +121,33 @@ body {
   color: #fff;
 }
 
-#reserva #reservaMixin {
+#horarioLugar #tabla {
+  border-spacing: 5rem;
+}
+
+@media (max-width: 992px) {
+  #horarioLugar #tabla {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+#horarioLugar #tabla .table {
   color: #fff;
-  font-family: 'Prompt', sans-serif;
-  background-color: #000;
 }
 
-#reserva #reservaMixin:hover {
-  color: #680368;
-}
-
-#card #cardTrabajos {
+#card #cardMixin {
   color: #000;
-  font-family: 'Prompt', sans-serif;
+  font-family: 'Barlow Condensed', sans-serif;
   background-color: #fff;
 }
 
-#card #cardTrabajos:hover {
-  color: #680368;
+#card #cardMixin:hover {
+  opacity: 1;
 }
 
 /*formularios*/
@@ -117,10 +156,15 @@ body {
   color: #000;
 }
 
-@media (max-width: 576px) {
-  #distincionFormularios #formulario {
-    width: 100%;
-  }
+#distincionFormularios #btnForm {
+  opacity: .7;
+  color: white;
+  font-family: 'Barlow Condensed', sans-serif;
+  background-color: black;
+}
+
+#distincionFormularios #btnForm:hover {
+  opacity: 1;
 }
 
 #distincionFormularios #tituloCardForm {
@@ -170,23 +214,35 @@ body {
   color: #000;
 }
 
-#distincionSob #cardSob {
-  background-color: #000;
-  color: #fff;
-  font-family: 'Barlow Condensed', sans-serif;
+#distincionSob #containerGridSob {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas: "uno dos" ". tres";
 }
 
-#distincionSob #cardDosSob {
-  background-color: #000;
-  color: #fff;
-  font-family: 'Barlow Condensed', sans-serif;
+#distincionSob #sobUno {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: uno;
 }
 
-#distincionSob #trabajosSobreMi {
-  min-height: 25vh;
+#distincionSob #sobDos {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: dos;
 }
 
-/*estudio*/
+#distincionSob #sobTres {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: tres;
+}
+
+/*estudio/portfolio*/
 #headerEst {
   color: #fff;
   font-family: 'Barlow Condensed', sans-serif;
@@ -200,6 +256,90 @@ body {
 #distincionEstudio {
   background-color: #fff;
   color: #000;
+}
+
+#distincionEstudio #imgPort {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#distincionEstudio #imgPort:hover {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+#distincionEstudio #imgPort {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#distincionEstudio #imgPort:hover {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+#distincionEstudio #imgPortDos {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#distincionEstudio #imgPortDos:hover {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+#distincionEstudio #imgPortTres {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#distincionEstudio #imgPortTres:hover {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+#distincionEstudio #imgPortCuatro {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#distincionEstudio #imgPortCuatro:hover {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+#distincionEstudio #imgPortCinco {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#distincionEstudio #imgPortCinco:hover {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+#distincionEstudio #imgPortSeis {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#distincionEstudio #imgPortSeis:hover {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
 }
 
 #distincionEstudio #textoEsDos {
@@ -217,7 +357,7 @@ body {
   color: #000;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 993px) {
   #distincionCui #infoCui {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -269,7 +409,7 @@ body {
   color: #fff;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 993px) {
   #horarioLugarCuidados {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -306,7 +446,7 @@ body {
   color: #000;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 993px) {
   #distincionTips #contenidoTips {
     width: 75%;
   }
@@ -376,18 +516,6 @@ body {
   color: #000;
 }
 
-#imagenCuatro, #imagenCinco, #imagenSeis {
-  opacity: .7;
-}
-
-#tituloUno, #tituloDos, #tituloTres, #tituloCuatro, #tituloCinco {
-  font-family: 'Koulen', cursive;
-  color: #000;
-  -webkit-text-stroke: 1px white;
-  color: black;
-  text-shadow: black 2px 5px;
-}
-
 #imagenUno, #imagenDos, #imagenTres {
   margin: 20px;
   border: 5px solid #eee;
@@ -402,12 +530,12 @@ body {
           transform: rotate(-7deg);
 }
 
-#distincionFormularios #trabajosFormularios #instaFormularios, #distincionSob #instaSob, #distincionEstudio #instaEstudio, #distincionCui #instaCui, #distincionTrabajos #instaTrabajos, #instaTips {
+#distincionFormularios #trabajosFormularios #instaFormularios, #distincionEstudio #instaEstudio, #distincionCui #instaCui, #distincionTrabajos #instaTrabajos, #instaTips {
   font-family: 'Lobster Two', cursive;
   color: #000;
 }
 
-#distincionFormularios #trabajosFormularios #instaFormularios:hover, #distincionSob #instaSob:hover, #distincionEstudio #instaEstudio:hover, #distincionCui #instaCui:hover, #distincionTrabajos #instaTrabajos:hover, #instaTips:hover {
+#distincionFormularios #trabajosFormularios #instaFormularios:hover, #distincionEstudio #instaEstudio:hover, #distincionCui #instaCui:hover, #distincionTrabajos #instaTrabajos:hover, #instaTips:hover {
   color: #680368;
 }
 /*# sourceMappingURL=estilos.css.map */
