@@ -17,8 +17,14 @@ body {
 }
 
 #headerIndex {
-  min-height: 40vh;
+  min-height: 45vh;
   background-color: #000;
+}
+
+@media all and (max-width: 1400px) {
+  #headerIndex {
+    min-height: 50vh;
+  }
 }
 
 #distincion {
@@ -52,10 +58,12 @@ body {
   }
 }
 
-@media (max-width: 992px) {
-  #distincion #fotos #containerFotos {
-    width: 100%;
-    height: 100%;
+#distincion #contenido {
+  font-family: 'Barlow Condensed', sans-serif;
+}
+
+@media (max-width: 991px) {
+  #containerFotos {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -69,11 +77,7 @@ body {
   }
 }
 
-#distincion #contenido #items {
-  font-family: 'Barlow Condensed', sans-serif;
-}
-
-#distincion #mixin {
+#mixin {
   font-family: 'Barlow Condensed', sans-serif;
 }
 
@@ -108,7 +112,7 @@ body {
   color: #fff;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 991px) {
   #footer #datos {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -125,7 +129,7 @@ body {
   border-spacing: 5rem;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 991px) {
   #horarioLugar #tabla {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -165,15 +169,6 @@ body {
 
 #distincionFormularios #btnForm:hover {
   opacity: 1;
-}
-
-#distincionFormularios #tituloCardForm {
-  color: #000;
-  font-family: 'Barlow Condensed', sans-serif;
-}
-
-#distincionFormularios #tituloCardForm:hover {
-  color: #680368;
 }
 
 #distincionFormularios .tituloDosForm {
@@ -222,6 +217,12 @@ body {
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
       grid-template-areas: "uno dos" ". tres";
+}
+
+@media all and (max-width: 575px) {
+  #distincionSob #containerGridSob {
+        grid-template-areas: "uno" "dos" "tres";
+  }
 }
 
 #distincionSob #sobUno {
@@ -357,6 +358,16 @@ body {
   color: #000;
 }
 
+#distincionCui #infoCui .row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+#distincionCui #infoCui .row > * {
+  -ms-flex-negative: 2;
+      flex-shrink: 2;
+}
+
 @media (max-width: 993px) {
   #distincionCui #infoCui {
     display: -webkit-box;
@@ -367,42 +378,6 @@ body {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-}
-
-#distincionCui #infoCui #tituloCui {
-  font-family: 'Barlow Condensed', sans-serif;
-  color: #000;
-}
-
-#distincionCui #infoCui #tituloCui:hover {
-  color: #680368;
-}
-
-#distincionCui #infoCui #tituloDosCui {
-  font-family: 'Barlow Condensed', sans-serif;
-  color: #000;
-}
-
-#distincionCui #infoCui #tituloDosCui:hover {
-  color: #680368;
-}
-
-#distincionCui #infoCui #tituloTresCui {
-  font-family: 'Barlow Condensed', sans-serif;
-  color: #000;
-}
-
-#distincionCui #infoCui #tituloTresCui:hover {
-  color: #680368;
-}
-
-#distincionCui #infoCui #tituloCuatroCui {
-  font-family: 'Barlow Condensed', sans-serif;
-  color: #000;
-}
-
-#distincionCui #infoCui #tituloCuatroCui:hover {
-  color: #680368;
 }
 
 #horarioLugarCuidados {
@@ -462,11 +437,7 @@ body {
   font-weight: 300;
 }
 
-#distincionTips #tituloTipsTres {
-  font-family: 'Barlow Condensed', sans-serif;
-}
-
-#distincionTips .card-title {
+#distincionTips #visitaTips #tituloTipsTres {
   font-family: 'Barlow Condensed', sans-serif;
 }
 
@@ -504,16 +475,37 @@ body {
   font-family: 'Barlow Condensed', sans-serif;
 }
 
+#distincionAreas #visitaAreas #tituloAreasSiete {
+  font-family: 'Barlow Condensed', sans-serif;
+}
+
 /*tatuajes*/
 #distincionTatuajes {
   background-color: #fff;
   color: #000;
 }
 
+#distincionTatuajes #visitaTatuajes {
+  font-family: 'Barlow Condensed', sans-serif;
+}
+
 /*guia*/
 #distincionGuia {
   background-color: #fff;
   color: #000;
+}
+
+#distincionGuia #visita {
+  font-family: 'Barlow Condensed', sans-serif;
+}
+
+#distincionFormularios #tituloCardForm, #distincionCui #infoCui #tituloCui, #distincionCui #infoCui #tituloDosCui, #distincionCui #infoCui #tituloTresCui, #distincionCui #infoCui #tituloCuatroCui, #distincionTips #visitaTips #tipsTatuajes, #distincionTips #visitaTips #tipsAreas, #distincionTips #visitaTips #tipsGuia, #distincionTips #cardTips, #distincionAreas #visitaAreas #areasTatuajes, #distincionAreas #visitaAreas #areasTips, #distincionAreas #visitaAreas #areasGuia, #distincionAreas #cardsAreas, #distincionAreas #cardsAreasDos, #distincionAreas #cardsAreasTres, #distincionTatuajes #visitaTatuajes #tatuajesTips, #distincionTatuajes #visitaTatuajes #tatuajesAreas, #distincionTatuajes #visitaTatuajes #tatuajesGuia, #distincionTatuajes #cardsTatuajesGral #cardsTatuajes, #distincionTatuajes #cardsTatuajesGral #cardsTatuajesDos, #distincionTatuajes #cardsTatuajesGral #cardsTatuajesTres, #distincionGuia #visita #guiaTips, #distincionGuia #visita #guiaAreas, #distincionGuia #visita #guiaTatuajes, #distincionGuia #cardsGuia, #distincionGuia #cardsGuiaDos, #distincionGuia #cardsGuiaTres {
+  color: #000;
+  font-family: 'Barlow Condensed', sans-serif;
+}
+
+#distincionFormularios #tituloCardForm:hover, #distincionCui #infoCui #tituloCui:hover, #distincionCui #infoCui #tituloDosCui:hover, #distincionCui #infoCui #tituloTresCui:hover, #distincionCui #infoCui #tituloCuatroCui:hover, #distincionTips #visitaTips #tipsTatuajes:hover, #distincionTips #visitaTips #tipsAreas:hover, #distincionTips #visitaTips #tipsGuia:hover, #distincionTips #cardTips:hover, #distincionAreas #visitaAreas #areasTatuajes:hover, #distincionAreas #visitaAreas #areasTips:hover, #distincionAreas #visitaAreas #areasGuia:hover, #distincionAreas #cardsAreas:hover, #distincionAreas #cardsAreasDos:hover, #distincionAreas #cardsAreasTres:hover, #distincionTatuajes #visitaTatuajes #tatuajesTips:hover, #distincionTatuajes #visitaTatuajes #tatuajesAreas:hover, #distincionTatuajes #visitaTatuajes #tatuajesGuia:hover, #distincionTatuajes #cardsTatuajesGral #cardsTatuajes:hover, #distincionTatuajes #cardsTatuajesGral #cardsTatuajesDos:hover, #distincionTatuajes #cardsTatuajesGral #cardsTatuajesTres:hover, #distincionGuia #visita #guiaTips:hover, #distincionGuia #visita #guiaAreas:hover, #distincionGuia #visita #guiaTatuajes:hover, #distincionGuia #cardsGuia:hover, #distincionGuia #cardsGuiaDos:hover, #distincionGuia #cardsGuiaTres:hover {
+  color: #680368;
 }
 
 #imagenUno, #imagenDos, #imagenTres {

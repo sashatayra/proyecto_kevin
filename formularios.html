@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -12,26 +12,26 @@
   <body>
     <nav id="menu" class="navbar navbar-expand-xl navbar-dark bg-dark">
         <div class="container-xl">
-        <a class="navbar-brand" href="index.html">Inicio</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarDark" aria-controls="navbarDark" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse show" id="navbarDark">
-            <ul class="navbar-nav me-auto mb-2 mb-xl-0">
-            <li class="nav-item">
-                <a class="nav-link" href="sobremi.html">Sobre Mi</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="cuidados.html">Cuidados Del Tatuaje</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="estudio.html">Portfolio</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="formularios.html">Cotiza Tu Tatuaje</a>
-            </li>
-            </ul>
-        </div>
+            <a class="navbar-brand" href="formularios.html">Cotiza Tu Tatuaje</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarDark" aria-controls="navbarDark" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse show" id="navbarDark">
+                <ul class="navbar-nav me-auto mb-2 mb-xl-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sobremi.html">Sobre Mi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cuidados.html">Cuidados Del Tatuaje</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="estudio.html">Portfolio</a>
+                    </li>
+                </ul>
+            </div>
         </div>
 	</nav>
     <div id="distincionFormularios">
@@ -42,35 +42,51 @@
                         <div class="fs-4 m-2">Hace tu reserva</div>
                     </div>
                     <form role="form" action="formularios.html" method="POST" enctype="multipart/form-data" class="col-6">
-                    <div class="form-group">
-                        <label for="ejemplo_nombre" class="m-2">Nombre</label>
-                        <input type="text" class="form-control m-2" id="ejemplo_nombre" placeholder="Nombre">
-                    </div>
-                    <div class="form-group">
-                        <label for="ejemplo_apellido" class="m-2">Apellido</label>
-                        <input type="text" class="form-control m-2" id="ejemplo_apellido" placeholder="Apellido">
-                    </div>
-                    <div class="form-group">
-                        <label for="ejemplo_email" class="m-2">E-mail</label>
-                        <input type="email" class="form-control m-2" id="ejemplo_email" placeholder="nombre@ejemplo.com">
-                    </div>
-                    <div class="form-group">
-                        <label for="ejemplo_telefono" class="m-2">Telefono</label>
-                        <input type="text" class="form-control m-2" id="ejemplo_telefono" placeholder="Telefono/Celular">
-                    </div>
-                    <div>
-                        <button type="button" class="btn p-1 rounded m-2 fs-5" id="btnForm">Enviar</button>
-                    </div>
+                        <div class="form-group">
+                            <label for="ejemplo_nombre" class="m-2">Nombre</label>
+                            <input type="text" class="form-control m-2" id="ejemplo_nombre" placeholder="Nombre">
+                        </div>
+                        <div class="form-group">
+                            <label for="ejemplo_apellido" class="m-2">Apellido</label>
+                            <input type="text" class="form-control m-2" id="ejemplo_apellido" placeholder="Apellido">
+                        </div>
+                        <div class="form-group">
+                            <label for="ejemplo_email" class="m-2">E-mail</label>
+                            <input type="email" class="form-control m-2" id="ejemplo_email" placeholder="nombre@ejemplo.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="ejemplo_telefono" class="m-2">Telefono</label>
+                            <input type="text" class="form-control m-2" id="ejemplo_telefono" placeholder="Telefono/Celular">
+                        </div>
+                        <div>
+                            <button type="button" class="btn p-1 rounded m-2 fs-5" data-bs-toggle="modal" data-bs-target="#exampleModal" id="btnForm">Enviar</button>
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <h5 class="modal-title" id="exampleModalLabel">Ya se enviaron tus datos</h5>
+                                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                      ¡Muchas gracias! En breve te contactaré.
+                                    </div>
+                                    <div class="modal-footer">
+                                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                        </div>
                     </form>
                     <div id="comunicarteFormularios" class="mt-4 py-3">
-                    <div class="fs-4 border-bottom border-top border-black p-2">O podes comunicarte conmigo al <a target="_blank" href="https://web.whatsapp.com/"><img width="25rem" height="25rem" src="assets/logo.wp.jpeg" alt="Logo whatsapp"></a></div>
+                        <div class="fs-4 border-bottom border-top border-black p-2">O podes comunicarte conmigo al <a target="_blank" href="https://web.whatsapp.com/"><img width="25rem" height="25rem" src="assets/logo.wp.jpeg" alt="Logo whatsapp"></a></div>
                     </div>
                 </div>  
                 <article class="col-lg-4 col-md-7 col-sm-8 mt-2">
                     <div class="fs-3">
                         <p class="tituloDosForm">¿TODAVIA NO SABES QUE TATUARTE?</p>
                         <p class="tituloDosForm">¿TENES MIEDO/INSEGURIDADES?</p>
-                        <p class="tituloDosForm">EN ESTE ARTICULO DESPEJAMOS TODAS TUS DUDAS</p>
+                        <p class="tituloDosForm">EN ESTE ARTICULO DESPEJO TODAS TUS DUDAS</p>
                     </div>
                     <div class="col">
                     <div class="card">
@@ -139,7 +155,7 @@
                 <p><a href="index.html">Inicio</a></p>
                 <p><a href="sobremi.html">Sobre mi</a></p>
                 <p><a href="cuidados.html">Cuidados del tatuaje</a></p>
-                <p><a href="trabajos.html">Portfolio</a></p>
+                <p><a href="estudio.html">Portfolio</a></p>
                 <p><a href="formularios.html">Cotiza tu tatuaje</a></p>
             </div>
         </div>
